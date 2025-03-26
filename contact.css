@@ -1,0 +1,290 @@
+.f-img {
+  background-image:
+    linear-gradient(#07423e00,
+      #07423e),
+    url(https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  /* background-attachment: fixed; */
+}
+
+/* Mobile screens par image adjust karne ke liye */
+@media (max-width: 768px) {
+  .f-img {
+    background-size: cover;
+    /* Mobile par pura image fit karne ke liye */
+    background-position: top;
+    /* Image ka important part visible rahe */
+    background-repeat: no-repeat;
+  }
+}
+
+
+.feedback {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(14, 150, 59, 0.1);
+  width: 90%;
+  max-width: 700px;
+  margin: 50px auto 100px auto;
+  border: 2px solid rgb(58, 122, 108);
+}
+
+.contact {
+  height: 100%;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  background-color: white;
+  border-color: white;
+  color: azure;
+  border-radius: 10px;
+}
+
+.stars {
+  display: flex;
+  gap: 5px;
+  margin: 10px 0;
+}
+
+.stars span {
+  font-size: 24px;
+  cursor: pointer;
+  color: gray;
+  transition: color 0.3s;
+}
+
+.stars span.active,
+.stars span:hover {
+  color: gold;
+}
+
+.satisfaction {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  /* Mobile ke liye thoda chhota */
+  margin: 10px 0;
+}
+
+.satisfaction span {
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.satisfaction span.active {
+  opacity: 1;
+}
+
+.radio-group {
+  display: flex;
+  gap: 15px;
+  /* Mobile ke liye spacing reduce */
+  flex-wrap: wrap;
+  /* Mobile par multiple rows allow karna */
+  margin-top: 15px;
+}
+
+#submit-btn {
+  width: 100%;
+  /* Full width for mobile */
+  max-width: 250px;
+  /* Limit max width */
+  padding: 12px;
+  border: none;
+  background-color: rgb(77, 38, 38);
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 15px auto 0 auto;
+  /* Centered */
+  display: block;
+}
+
+button:hover {
+  background: darkblue;
+}
+
+.head-feedback {
+  height: auto;
+  /* Fixed height hatayi */
+  margin-top: 150px;
+  /* Mobile ke liye reduce kiya */
+  font-size: 90px;
+  /* Smaller font size */
+  display: flex;
+  font-family: 'Anton', Courier, monospace;
+  text-align: center;
+  justify-content: center;
+}
+
+/* Mobile-Friendly Styles */
+@media (max-width: 768px) {
+  .feedback {
+    width: 95%;
+    /* Thoda aur compact */
+    padding: 15px;
+    margin-bottom: 50px;
+  }
+
+  .head-feedback {
+    font-size: 55px;
+  }
+
+  .radio-group {
+    gap: 40px;
+  }
+}
+
+.footer-bottom-p p {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.623);
+  font-weight: 100;
+}
+
+.footer-logo a {
+  text-decoration: none;
+}
+
+#btn-message {
+  background-color: rgb(77, 38, 38);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.header-main-text {
+  margin-top: 200px;
+  text-align: center;
+  height: auto;
+}
+
+.header-main-text h1 {
+  font-size: 150px;
+  line-height: 1;
+  font-family: 'Anton', Courier, monospace;
+  color: white;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.header-main-span {
+  font-size: 25px;
+  margin-top: 30px;
+  color: white;
+  font-weight: 600;
+  padding-left: 220px;
+  padding-right: 220px;
+  line-height: 28px;
+  font-family: 'EB Garamond';
+
+}
+
+.header-main-btn1 {
+  height: 50px;
+  width: 200px;
+  background-color: yellow;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 15px;
+  font-weight: 600;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  transition: all 0.3s ease-in-out;
+}
+
+.header-main-btn1:hover {
+  color: white;
+  background-color: purple;
+}
+
+@media (max-width: 768px) {
+  .header-main-text {
+    margin-top: 60px;
+    text-align: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header-main-text h1 {
+    font-size: 45px;
+    line-height: 45px;
+    transform: scaleY(1);
+  }
+
+  .header-main-text h5 {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 20px;
+  }
+
+  .header-main-span {
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+  }
+
+  .header-main-btn1,
+  .header-main-btn2 {
+    height: 45px;
+    width: 180px;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  .header-main-btn2 {
+    width: 230px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-main-text {
+    margin-top: 60px;
+    text-align: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header-main-text h1 {
+    font-size: 45px;
+    line-height: 45px;
+    transform: scaleY(1);
+  }
+
+  .header-main-text h5 {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 20px;
+  }
+
+  .header-main-span {
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: auto;
+    font-weight: 600;
+  }
+
+  .header-main-btn1,
+  .header-main-btn2 {
+    height: 45px;
+    width: 180px;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  .header-main-btn2 {
+    width: 230px;
+  }
+}

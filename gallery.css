@@ -1,0 +1,1116 @@
+.f-img {
+  background-image:
+    linear-gradient(#07423e00,
+      #07423e),
+    url(https://images.unsplash.com/photo-1530824395616-b1ec7fac4aff?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  /* background-attachment: fixed; */
+}
+
+/* Mobile screens par image adjust karne ke liye */
+@media (max-width: 768px) {
+  .f-img {
+    background-size: cover;
+    /* Mobile par pura image fit karne ke liye */
+    background-position: top;
+    /* Image ka important part visible rahe */
+    background-repeat: no-repeat;
+  }
+}
+
+.header-main-text {
+  margin-top: 200px;
+  /* margin-left: 150px; */
+  text-align: center;
+  height: auto;
+}
+
+.header-main-text h1 {
+  font-size: 140px;
+  line-height: 1;
+  color: white;
+  font-family: 'Anton', Courier, monospace;
+  font-weight: 800;
+  /* transform: scaleY(1.2) */
+}
+
+.header-main-span {
+  font-size: 22px;
+  margin-top: 30px;
+  color: white;
+  font-weight: 400;
+  width: 600px;
+  height: auto;
+  margin-left: 330px;
+  font-family: 'EB Garamond';
+}
+
+.header-main-btn1 {
+  height: 50px;
+  width: 200px;
+  background-color: yellow;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 15px;
+  font-weight: 600;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+.header-main-btn1:hover {
+  color: white;
+  background-color: purple;
+}
+
+@media (max-width: 768px) {
+  .header-main-text {
+    margin-top: 60px;
+    text-align: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header-main-text h1 {
+    font-size: 45px;
+    line-height: 45px;
+    transform: scaleY(1);
+  }
+
+  .header-main-text h5 {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 20px;
+  }
+
+  .header-main-span {
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+  }
+
+  .header-main-btn1,
+  .header-main-btn2 {
+    height: 45px;
+    width: 180px;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  .header-main-btn2 {
+    width: 230px;
+  }
+}
+
+main {
+  height: 100%;
+}
+
+.gallery {
+  height: 100%;
+  /* margin-top: 150px ; */
+}
+
+.modal-header {
+  background-color: #0b251f;
+  /* cursor: default; */
+}
+
+.modal-body {
+  background-color: #193f3c;
+  cursor: default;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.modal-footer {
+  background-color: #0b251f;
+  /* cursor: default; */
+}
+
+.btn-close,
+.btn-footer-close {
+  color: white;
+  background-color: #11a0a5;
+}
+
+.btn-close:hover,
+.btn-footer-close:hover {
+  color: white;
+  background-color: #24d49a;
+}
+
+.gallery-view-btn {
+  background-color: #147555;
+  transition: all 0.3s ease-in-out;
+  color: white;
+}
+
+.gallery-view-btn:hover {
+  color: rgb(0, 0, 0);
+  background-color: #cfe6de;
+}
+
+.gallery-content {
+  /* background-color: #ffffff; */
+  position: relative;
+  cursor: pointer;
+}
+
+.gallery-inner {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 100px 0;
+}
+
+#Animals-Heading {
+  /* text-align: center; */
+  height: 120px;
+  margin: 0 0 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  font-family: 'Anton', Courier, monospace;
+  font-weight: 900;
+  width: 100%;
+  border-bottom: rgba(255, 255, 255, 0.678) 5px solid;
+  color: white;
+}
+
+@media (max-width:480px) {
+  #Animals-Heading {
+    font-size: 40px;
+  }
+}
+
+.overlay-btn {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* .Amphibians:hover .overlay-btn {
+    opacity: 1;
+    z-index: 100;
+  } */
+.Animal-1:hover .overlay-btn,
+.Animal-2:hover .overlay-btn,
+.Animal-3:hover .overlay-btn,
+.Animal-4:hover .overlay-btn,
+.Animal-5:hover .overlay-btn,
+.Animal-6:hover .overlay-btn,
+.Animal-7:hover .overlay-btn,
+.Animal-8:hover .overlay-btn,
+.Animal-9:hover .overlay-btn,
+.Animal-10:hover .overlay-btn {
+  opacity: 1;
+  z-index: 100;
+}
+
+/* -----grid gallery css code------ */
+
+.gallery-inner {
+  display: grid;
+  grid-template-columns: repeat(8, 120px);
+  grid-template-rows: repeat(12, 50px);
+  gap: 20px;
+  justify-content: center;
+}
+
+.Amphibians-div-1 {
+  grid-column: 1/4;
+  grid-row: 1/4;
+  background-image: url('e project/images for animals/amphibians/patti-black-F2__qISbfvU-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.Amphibians-div-2 {
+  height: 100%;
+  grid-column: 3/5;
+  grid-row: 7/10;
+  background-image: url('e project/images for animals/amphibians/david-clode-DCelW4ytxfM-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.Amphibians-div-3 {
+  grid-column: 1/3;
+  grid-row: 7/13;
+  background-image: url('e project/images for animals/amphibians/donna-white-nzYIcLXcOXI-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.Amphibians-div-4 {
+  grid-column: 3/5;
+  grid-row: 10/13;
+  background-image: url('e project/images for animals/amphibians/erik-karits-lkQ_vB-CmRU-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.Amphibians-div-5 {
+  grid-column: 7/9;
+  grid-row: 4/9;
+  background-image: url('e project/images for animals/amphibians/patti-black-3PS9GrC36tY-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.Amphibians-div-6 {
+  grid-column: 7/9;
+  grid-row: 9/13;
+  background-image: url('e project/images for animals/amphibians/ivan-sabayuki-tnUXp64I_Hg-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.Amphibians-div-7 {
+  grid-column: 7/9;
+  grid-row: 1/4;
+  background-image: url('e project/images for animals/amphibians/iuliu-illes-SrxuzQ9xhEk-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.Amphibians-div-8 {
+  grid-column: 5/7;
+  grid-row: 7/13;
+  background-image: url('e project/images for animals/amphibians/daria-daria-A6NG0faaSCM-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.Amphibians-div-9 {
+  grid-column: 4/7;
+  grid-row: 1/7;
+  background-image: url('e project/images for animals/amphibians/li-lin-trQo1F6lBgs-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.Amphibians-div-10 {
+  grid-column: 1/4;
+  grid-row: 4/7;
+  background-image: url('e project/img/axotoyl.jfif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.Mammals-div-1 {
+  grid-column: 1/4;
+  grid-row: 1/4;
+  background-image: url('e project/images for animals/mammals/dusan-veverkolog-bXFgHE02zJY-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.Mammals-div-2 {
+  height: 100%;
+  grid-column: 3/5;
+  grid-row: 7/10;
+  background-image: url('e project/images for animals/mammals/matias-tapia-Q9gAijKx5wY-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.Mammals-div-3 {
+  grid-column: 1/3;
+  grid-row: 7/13;
+  background-image: url('e project/images for animals/mammals/andrea-chioldin-6LChsc9M2rA-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.Mammals-div-4 {
+  grid-column: 3/5;
+  grid-row: 10/13;
+  background-image: url('e project/images for animals/mammals/nick-fewings-ib1vx-6XfB8-unsplash\ \(1\).jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.Mammals-div-5 {
+  grid-column: 7/9;
+  grid-row: 4/9;
+  background-image: url('e project/images for animals/mammals/birger-strahl-4WzdySGib64-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.Mammals-div-6 {
+  grid-column: 7/9;
+  grid-row: 9/13;
+  background-image: url('e project/images for animals/mammals/kerin-gedge-P3sEj29SHD8-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.Mammals-div-7 {
+  grid-column: 7/9;
+  grid-row: 1/4;
+  background-image: url('e project/images for animals/mammals/alvan-nee-ZCHj_2lJP00-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.Mammals-div-8 {
+  grid-column: 5/7;
+  grid-row: 7/13;
+  background-image: url('e project/images for animals/mammals/arjun-mj-tHqvS69AfUY-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.Mammals-div-9 {
+  grid-column: 4/7;
+  grid-row: 1/7;
+  background-image: url('e project/images for animals/mammals/taylor-kopel-WX4i1Jq_o0Y-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.Mammals-div-10 {
+  grid-column: 1/4;
+  grid-row: 4/7;
+  background-image: url('e project/images for animals/mammals/matias-tapia-Q9gAijKx5wY-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+
+.Reptiles-div-1 {
+  grid-column: 1/4;
+  grid-row: 1/4;
+  background-image: url('e project/images for animals/reptiles/david-clode-wdOilL4oHKY-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.Reptiles-div-2 {
+  height: 100%;
+  grid-column: 3/5;
+  grid-row: 7/10;
+  background-image: url('e project/images for animals/reptiles/verdian-chua-xbQQviRJ1mI-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.Reptiles-div-3 {
+  grid-column: 1/3;
+  grid-row: 7/13;
+  background-image: url('e project/images for animals/reptiles/pradip-dalai-amkVgRdPXPw-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.Reptiles-div-4 {
+  grid-column: 3/5;
+  grid-row: 10/13;
+  background-image: url('e project/images for animals/reptiles/jesper-van-der-pol-ZnfhXYUml-w-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.Reptiles-div-5 {
+  grid-column: 7/9;
+  grid-row: 4/9;
+  background-image: url('e project/images for animals/reptiles/jan-kopriva-hOUGh3dAF0w-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.Reptiles-div-6 {
+  grid-column: 7/9;
+  grid-row: 9/13;
+  background-image: url('e project/images for animals/reptiles/hasmik-ghazaryan-olson-N_GrR8c2EMk-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.Reptiles-div-7 {
+  grid-column: 7/9;
+  grid-row: 1/4;
+  background-image: url('e project/images for animals/reptiles/david-clode-Ws6Tb1cI0co-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.Reptiles-div-8 {
+  grid-column: 5/7;
+  grid-row: 7/13;
+  background-image: url('e project/images for animals/reptiles/david-clode-vec5yfUvCGs-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.Reptiles-div-9 {
+  grid-column: 4/7;
+  grid-row: 1/7;
+  background-image: url('e project/images for animals/reptiles/yegor-denisov-ZCt2ayQCre8-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.Reptiles-div-10 {
+  grid-column: 1/4;
+  grid-row: 4/7;
+  background-image: url('e project/images for animals/reptiles/adam-mills-F3a24w6yWnI-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+
+.Birds-div-1 {
+  grid-column: 1/4;
+  grid-row: 1/4;
+  background-image: url('e project/images for animals/birds/oliver-holden-MUr56H9crYs-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.Birds-div-2 {
+  height: 100%;
+  grid-column: 3/5;
+  grid-row: 7/10;
+  background-image: url('e project/images for animals/birds/erik-van-dijk--MD5hZCuCQ8-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.Birds-div-3 {
+  grid-column: 1/3;
+  grid-row: 7/13;
+  background-image: url('e project/images for animals/birds/saad-khan-dMt7O_PwJUU-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.Birds-div-4 {
+  grid-column: 3/5;
+  grid-row: 10/13;
+  background-image: url('e project/images for animals/birds/sonder-quest-vTpr9AZD1QE-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.Birds-div-5 {
+  grid-column: 7/9;
+  grid-row: 4/9;
+  background-image: url('e project/images for animals/birds/saad-khan-dMt7O_PwJUU-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.Birds-div-6 {
+  grid-column: 7/9;
+  grid-row: 9/13;
+  background-image: url('e project/images for animals/birds/richard-sagredo-oT5F4u7A9cw-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.Birds-div-7 {
+  grid-column: 7/9;
+  grid-row: 1/4;
+  background-image: url('e project/images for animals/birds/erik-van-dijk--MD5hZCuCQ8-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.Birds-div-8 {
+  grid-column: 5/7;
+  grid-row: 7/13;
+  background-image: url('e project/images for animals/birds/mauro-tandoi-_jn3oS40sRM-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.Birds-div-9 {
+  grid-column: 4/7;
+  grid-row: 1/7;
+  background-image: url('e project/images for animals/birds/aniket-solankar-Eb_2ItJvcI8-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.Birds-div-10 {
+  grid-column: 1/4;
+  grid-row: 4/7;
+  background-image: url('e project/images for animals/birds/elena-g-LJSH3NOTLwc-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+
+.Marine-div-1 {
+  grid-column: 1/4;
+  grid-row: 1/4;
+  background-image: url('e project/images for animals/marine animals/noaa-JI1Eg7viF5g-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.Marine-div-2 {
+  height: 100%;
+  grid-column: 3/5;
+  grid-row: 7/10;
+  background-image: url('e project/images for animals/marine animals/david-clode-EDfZ0Sjmp_w-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.Marine-div-3 {
+  grid-column: 1/3;
+  grid-row: 7/13;
+  background-image: url('e project/images for animals/marine animals/david-clode-fG1fdervp1E-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.Marine-div-4 {
+  grid-column: 3/5;
+  grid-row: 10/13;
+  background-image: url('e project/images for animals/marine animals/david-clode-JdNixbsLwS8-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.Marine-div-5 {
+  grid-column: 7/9;
+  grid-row: 4/9;
+  background-image: url('e project/images for animals/marine animals/diane-picchiottino-Fo4_-oKnxjE-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.Marine-div-6 {
+  grid-column: 7/9;
+  grid-row: 9/13;
+  background-image: url('e project/images for animals/marine animals/jakob-owens-79YoQ2edaZc-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.Marine-div-7 {
+  grid-column: 7/9;
+  grid-row: 1/4;
+  background-image: url('e project/images for animals/marine animals/david-clode-9FvTOCfvt_w-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.Marine-div-8 {
+  grid-column: 5/7;
+  grid-row: 7/13;
+  background-image: url('e project/images for animals/marine animals/kyaw-tun-7K3VasWk47Q-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.Marine-div-9 {
+  grid-column: 4/7;
+  grid-row: 1/7;
+  background-image: url('e project/images for animals/marine animals/sunita-fan-vjps1B7t8p8-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.Marine-div-10 {
+  grid-column: 1/4;
+  grid-row: 4/7;
+  background-image: url('e project/images for animals/marine animals/noaa-a7T0PQol-6E-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.modal-title {
+  color: #ffffff;
+  font-family: 'Anton';
+  font-size: 30px;
+}
+
+.about-animal {
+  padding: 0 50px;
+}
+
+
+.modal-section1 {
+  margin-top: 20px;
+}
+
+.modal-section2 .about-animal {
+  margin: 20px 0 0 0;
+}
+
+.modal-section2 .about-animal .about-animal-p {
+  text-align: center;
+}
+
+@media (max-width:1024px) {
+  .modal-section1 {
+    flex-wrap: wrap-reverse;
+  }
+
+  .modal-section2 {
+    flex-wrap: wrap;
+  }
+
+  .modal-section1 .image-box,
+  .modal-section2 .image-box {
+    /* height: 100%; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal-section1 .image-box img,
+  .modal-section2 .image-box img {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal-section1 .about-animal {
+    margin: 80px 0 0 0;
+  }
+
+  .modal-section2 .about-animal .about-animal-p {
+    text-align: start;
+  }
+
+  .about-animal {
+    padding: 0 10px;
+  }
+
+  .gallery-inner {
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(6, 120px);
+    grid-template-rows: repeat(23, 50px);
+  }
+
+  .Amphibians-div-5,
+  .Mammals-div-5,
+  .Reptiles-div-5,
+  .Birds-div-5,
+  .Marine-div-5 {
+    grid-column: 1/4;
+    grid-row: 13/19;
+    border-radius: 30px;
+  }
+
+  .Amphibians-div-6,
+  .Mammals-div-6,
+  .Reptiles-div-6,
+  .Birds-div-6,
+  .Marine-div-6 {
+    grid-column: 4/7;
+    grid-row: 13/19;
+    border-radius: 30px;
+  }
+
+  .Amphibians-div-7,
+  .Mammals-div-7,
+  .Reptiles-div-7,
+  .Birds-div-7,
+  .Marine-div-7 {
+    grid-column: 1/7;
+    grid-row: 19/24;
+    border-radius: 30px;
+  }
+}
+
+@media (max-width:860px) {
+  .gallery-inner {
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(6, 100px);
+    grid-template-rows: repeat(23, 50px);
+  }
+
+  .Amphibians-div-5,
+  .Mammals-div-5,
+  .Reptiles-div-5,
+  .Birds-div-5,
+  .Marine-div-5 {
+    grid-column: 1/4;
+    grid-row: 13/19;
+    border-radius: 30px;
+  }
+
+  .Amphibians-div-6,
+  .Mammals-div-6,
+  .Reptiles-div-6,
+  .Birds-div-6,
+  .Marine-div-6 {
+    grid-column: 4/7;
+    grid-row: 13/19;
+    border-radius: 30px;
+  }
+
+  .Amphibians-div-7,
+  .Mammals-div-7,
+  .Reptiles-div-7,
+  .Birds-div-7,
+  .Marine-div-7 {
+    grid-column: 1/7;
+    grid-row: 19/24;
+    border-radius: 30px;
+  }
+}
+
+@media (max-width:768px) {
+  .gallery-inner {
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(5, 100px);
+    grid-template-rows: repeat(23, 50px);
+  }
+
+  .Amphibians-div-2,
+  .Mammals-div-2,
+  .Reptiles-div-2,
+  .Birds-div-2,
+  .Marine-div-2 {
+    height: 100%;
+    grid-column: 3/6;
+    grid-row: 7/10;
+    border-radius: 30px;
+  }
+
+  /*   
+  .div-3 {
+    grid-column: 1/3;
+    grid-row: 7/13;
+    border-radius: 30px;
+  } */
+
+  .Amphibians-div-4,
+  .Mammals-div-4,
+  .Reptiles-div-4,
+  .Birds-div-4,
+  .Marine-div-4 {
+    grid-column: 3/6;
+    grid-row: 10/13;
+    border-radius: 30px;
+  }
+
+  .Amphibians-div-5,
+  .Mammals-div-5,
+  .Reptiles-div-5,
+  .Birds-div-5,
+  .Marine-div-5 {
+    grid-column: 1/4;
+    grid-row: 17/20;
+    border-radius: 30px;
+  }
+
+  .Amphibians-div-6,
+  .Mammals-div-6,
+  .Reptiles-div-6,
+  .Birds-div-6,
+  .Marine-div-6 {
+    grid-column: 4/6;
+    grid-row: 17/20;
+    border-radius: 30px;
+  }
+
+  .Amphibians-div-7,
+  .Mammals-div-7,
+  .Reptiles-div-7,
+  .Birds-div-7,
+  .Marine-div-7 {
+    grid-column: 1/6;
+    grid-row: 20/24;
+    border-radius: 30px;
+  }
+
+  .Amphibians-div-8,
+  .Mammals-div-8,
+  .Reptiles-div-8,
+  .Birds-div-8,
+  .Marine-div-8 {
+    grid-column: 1/6;
+    grid-row: 13/17;
+    border-radius: 30px;
+  }
+
+  .Amphibians-div-9,
+  .Mammals-div-9,
+  .Reptiles-div-9,
+  .Birds-div-9,
+  .Marine-div-9 {
+    grid-column: 4/6;
+    grid-row: 1/7;
+    border-radius: 30px;
+  }
+}
+
+@media (max-width:630px) {
+  .gallery-inner {
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(6, 65px);
+    grid-template-rows: repeat(23, 50px);
+  }
+
+  .Amphibians-div-2,
+  .Mammals-div-2,
+  .Reptiles-div-2,
+  .Birds-div-2,
+  .Marine-div-2 {
+    height: 100%;
+    grid-column: 4/7;
+    grid-row: 7/10;
+    border-radius: 30px;
+  }
+
+  .Amphibians-div-3,
+  .Mammals-div-3,
+  .Reptiles-div-3,
+  .Birds-div-3,
+  .Marine-div-3 {
+    grid-column: 1/4;
+    grid-row: 7/13;
+    border-radius: 30px;
+  }
+
+  .Amphibians-div-4,
+  .Mammals-div-4,
+  .Reptiles-div-4,
+  .Birds-div-4,
+  .Marine-div-4 {
+    grid-column: 4/7;
+    grid-row: 10/13;
+    border-radius: 30px;
+  }
+
+  .Amphibians-div-5,
+  .Mammals-div-5,
+  .Reptiles-div-5,
+  .Birds-div-5,
+  .Marine-div-5 {
+    grid-column: 1/4;
+    grid-row: 17/20;
+    border-radius: 30px;
+  }
+
+  .Amphibians-div-6,
+  .Mammals-div-6,
+  .Reptiles-div-6,
+  .Birds-div-6,
+  .Marine-div-6 {
+    grid-column: 4/7;
+    grid-row: 17/20;
+    border-radius: 30px;
+  }
+
+  .Amphibians-div-7,
+  .Mammals-div-7,
+  .Reptiles-div-7,
+  .Birds-div-7,
+  .Marine-div-7 {
+    grid-column: 1/7;
+    grid-row: 20/24;
+    border-radius: 30px;
+  }
+
+  .Amphibians-div-8,
+  .Mammals-div-8,
+  .Reptiles-div-8,
+  .Birds-div-8,
+  .Marine-div-8 {
+    grid-column: 1/7;
+    grid-row: 13/17;
+    border-radius: 30px;
+  }
+
+  .Amphibians-div-9,
+  .Mammals-div-9,
+  .Reptiles-div-9,
+  .Birds-div-9,
+  .Marine-div-9 {
+    grid-column: 4/7;
+    grid-row: 1/7;
+    border-radius: 30px;
+  }
+}
+
+
+@media (max-width:480px) {
+  .gallery-inner {
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(6, 50px);
+    grid-template-rows: repeat(23, 50px);
+  }
+
+  .Amphibians-div-2,
+  .Mammals-div-2,
+  .Reptiles-div-2,
+  .Birds-div-2,
+  .Marine-div-2 {
+    height: 100%;
+    grid-column: 4/7;
+    grid-row: 7/10;
+    border-radius: 30px;
+  }
+
+  .Amphibians-div-3,
+  .Mammals-div-3,
+  .Reptiles-div-3,
+  .Birds-div-3,
+  .Marine-div-3 {
+    grid-column: 1/4;
+    grid-row: 7/13;
+    border-radius: 30px;
+  }
+
+  .Amphibians-div-4,
+  .Mammals-div-4,
+  .Reptiles-div-4,
+  .Birds-div-4,
+  .Marine-div-4 {
+    grid-column: 4/7;
+    grid-row: 10/13;
+    border-radius: 30px;
+  }
+
+  .Amphibians-div-5,
+  .Mammals-div-5,
+  .Reptiles-div-5,
+  .Birds-div-5,
+  .Marine-div-5 {
+    grid-column: 1/4;
+    grid-row: 17/20;
+    border-radius: 30px;
+  }
+
+  .Amphibians-div-6,
+  .Mammals-div-6,
+  .Reptiles-div-6,
+  .Birds-div-6,
+  .Marine-div-6 {
+    grid-column: 4/7;
+    grid-row: 17/20;
+    border-radius: 30px;
+  }
+
+  .Amphibians-div-7,
+  .Mammals-div-7,
+  .Reptiles-div-7,
+  .Birds-div-7,
+  .Marine-div-7 {
+    grid-column: 1/7;
+    grid-row: 20/24;
+    border-radius: 30px;
+  }
+
+  .Amphibians-div-8,
+  .Mammals-div-8,
+  .Reptiles-div-8,
+  .Birds-div-8,
+  .Marine-div-8 {
+    grid-column: 1/7;
+    grid-row: 13/17;
+    border-radius: 30px;
+  }
+
+  .Amphibians-div-9,
+  .Mammals-div-9,
+  .Reptiles-div-9,
+  .Birds-div-9,
+  .Marine-div-9 {
+    grid-column: 4/7;
+    grid-row: 1/7;
+    border-radius: 30px;
+  }
+}
+
+@media (max-width:430px) {
+  .gallery-inner {
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(6, 50px);
+    grid-template-rows: repeat(23, 30px);
+    gap: 10px;
+  }
+
+}
+
+@media (max-width:380px) {
+  .gallery-inner {
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(6, 40px);
+    grid-template-rows: repeat(23, 30px);
+    gap: 10px;
+  }
+
+}

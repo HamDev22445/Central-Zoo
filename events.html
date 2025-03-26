@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>e project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <!-- Font Awesome Icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <!-- MDBootstrap JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
+    <!-- MDBootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Russo+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="events.css" />
+    <link rel="icon" href="e project/img/Tiger-Zoo-Logo-Green.png" />
+</head>
+
+<body>
+    <header class="align-items-center justify-content-between head">
+        <div class="parent align-items-center ">
+            <div class="div-zoo-text align-items-center d-flex justify-content-center showcase-tight">
+                <i class="fa-solid fa-paw fa-lg mx-2 "></i>Central Safari Zoo
+            </div>
+            <div class="div-timing-zoo align-items-center d-flex justify-content-center">
+
+                <i class="fa fa-clock fa-solid mx-2 mb-1 "></i> Opening Times : 12pm To 6pm (Last Entry at 5pm)
+            </div>
+        </div>
+        </div>
+    </header>
+    <div class="header-main align-items-start justify-content-center f-img">
+        <header id="header" class="header d-flex align-items-center sticky-top">
+            <div
+                class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+                <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+                    <div class="logo">
+                        <img src="e project/img/Tiger-Zoo-Logo-Green.png" class="logo-img" width="80%" alt="">
+                    </div>
+                    <div class="sitename d-flex align-items-center justify-content-center">
+                        Central Zoo
+                    </div>
+                </a>
+                <nav id="navmenu" class="navmenu">
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="about us.html">About Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="events.html">Events & Safari</a></li>
+                        <li><a href="contact us.html">Contact Us</a></li>
+                        <button id="button" class="btn btn-success d-flex align-items-center justify-content-center">
+                            <a class="ticket-button-main d-flex align-items-center justify-content-center"
+                                href="tickets.html"
+                                style="font-size: 20px; font-weight: 200; font-family: impact, Helvetica, sans-serif;">
+                                JOIN
+                                <i class="icon-button bi-chevron-right"></i>
+                            </a>
+                        </button>
+                        <li>
+                            <div class="responsive-social-links">
+                                <h3>social-links</h3>
+                                <div class="responsive-links">
+                                    <a href="#" class="twitter"><i class="icon bi bi-twitter-x"></i></a>
+                                    <a href="#" class="facebook"><i class="icon bi bi-facebook"></i></a>
+                                    <a href="#" class="instagram"><i class="icon bi bi-instagram"></i></a>
+                                    <a href="#" class="linkedin"><i class="icon bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+                </nav>
+                <div class="header-social-links">
+                    <a href="#" class="twitter"><i class="icon bi bi-twitter-x"></i></a>
+                    <a href="#" class="facebook"><i class="icon bi bi-facebook"></i></a>
+                    <a href="#" class="instagram"><i class="icon bi bi-instagram"></i></a>
+                    <a href="#" class="linkedin"><i class="icon bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </header>
+        <div class="header-main-text">
+            <h1>OUR EVENTS & SAFARI</h1>
+            <p class="header-main-span">Experience thrilling wildlife safaris and exciting events at our zoo! From
+                guided tours to special animal encounters, there's always something new to explore.</p>
+            <br>
+            <a href="tickets.html" class="header-main-btn1 btn mx-1 ">BOOK TICKET</a>
+        </div>
+    </div>
+    <main>
+        <div class="event-head">
+            <h1 class="about-us-heading">Events</h1>
+            <p class="event-p">Join us for exciting events at CENTRAL Zoo, where adventure meets wildlife! From
+                fun-filled animal shows to interactive educational programs, there's something for everyone to enjoy.
+            </p>
+        </div>
+        <div class="container mb-4 d-flex justify-content-between" data-aos="fade-up" data-aos-delay="100">
+            <span class="filter-btn" onclick="filterEvents('all')">All Events</span>
+            <div class="other-events">
+                <span class="filter-btn" onclick="filterEvents('novelty')">Novelty</span>
+                <span class="filter-btn" onclick="filterEvents('popular')">Popular</span>
+                <span class="filter-btn" onclick="filterEvents('upcoming')">Upcoming</span>
+            </div>
+        </div>
+        <div class="container events-box" data-aos="fade-up" data-aos-delay="300">
+            <div class="event-card novelty">
+                <div class="event-image">
+                    <img src="e project/img/dolphin-parade.jpg" alt="Event Image">
+                </div>
+                <div class="event-content">
+                    <div class="event-date">MARCH 28, 2021 • 9:30 AM - 5:00 PM</div>
+                    <div class="event-title">Dolphin Parade</div>
+                    <div class="event-location">Central Zoo, 167 Cathedral Ave, Hempstead</div>
+                    <div class="event-description">Do you think dolphins are smart? Witness the live dolphin parade and
+                        enjoy their amazing tricks!</div>
+                    <div class="event-price">$20 <a href=""><button class="event-ticket">BUY TICKET</button></a></div>
+                </div>
+            </div>
+            <div class="event-card popular">
+                <div class="event-image">
+                    <img src="e project/img/tiger-encoounter.jpg" alt="Event Image">
+                </div>
+                <div class="event-content">
+                    <div class="event-date">APRIL 5, 2021 • 10:00 AM - 4:00 PM</div>
+                    <div class="event-title">Tiger Encounter</div>
+                    <div class="event-location">Central Zoo, 167 Cathedral Ave, Hempstead</div>
+                    <div class="event-description">Come face-to-face with majestic tigers and learn about their
+                        conservation.</div>
+                    <div class="event-price">$25 <a href=""><button class="event-ticket">BUY TICKET</button></a></div>
+                </div>
+            </div>
+            <div class="event-card upcoming">
+                <div class="event-image">
+                    <img src="e project/img/elephant-show.jpg" alt="Event Image">
+                </div>
+                <div class="event-content">
+                    <div class="event-date">APRIL 12, 2021 • 11:00 AM - 3:00 PM</div>
+                    <div class="event-title">Elephant Show</div>
+                    <div class="event-location">Central Zoo, 167 Cathedral Ave, Hempstead</div>
+                    <div class="event-description">Watch elephants showcase their intelligence and strength in a
+                        spectacular show.</div>
+                    <div class="event-price">$18 <a href=""><button class="event-ticket">BUY TICKET</button></a></div>
+                </div>
+            </div>
+            <div class="event-card novelty">
+                <div class="event-image">
+                    <img src="e project/img/giraffe feeding.jpg" alt="Event Image">
+                </div>
+                <div class="event-content">
+                    <div class="event-date">APRIL 20, 2021 • 1:00 PM - 5:00 PM</div>
+                    <div class="event-title">Giraffe Feeding</div>
+                    <div class="event-location">Central Zoo, 167 Cathedral Ave, Hempstead</div>
+                    <div class="event-description">Get up close and personal with gentle giraffes as you hand-feed them.
+                    </div>
+                    <div class="event-price">$15 <a href=""><button class="event-ticket">BUY TICKET</button></a></div>
+                </div>
+            </div>
+            <div class="event-card popular">
+                <div class="event-image">
+                    <img src="e project/img/penguin-parade.jpg" alt="Event Image">
+                </div>
+                <div class="event-content">
+                    <div class="event-date">APRIL 28, 2021 • 2:00 PM - 6:00 PM</div>
+                    <div class="event-title">Penguin Parade</div>
+                    <div class="event-location">Central Zoo, 167 Cathedral Ave, Hempstead</div>
+                    <div class="event-description">Enjoy the adorable penguins as they waddle around in their daily
+                        parade.</div>
+                    <div class="event-price">$22 <a href=""><button class="event-ticket">BUY TICKET</button></a></div>
+                </div>
+            </div>
+            <div class="event-card upcoming">
+                <div class="event-image">
+                    <img src="e project/img/lion-roar-show.jpg" alt="Event Image">
+                </div>
+                <div class="event-content">
+                    <div class="event-date">MAY 23, 2021 • 12:00 PM - 7:00 PM</div>
+                    <div class="event-title">Lion Roar Show</div>
+                    <div class="event-location">Central Zoo, 167 Cathedral Ave, Hempstead</div>
+                    <div class="event-description">Experience the power and majesty of lions up close in this thrilling
+                        show.</div>
+                    <div class="event-price">$30 <a href=""><button class="event-ticket">BUY TICKET</button></a></div>
+                </div>
+            </div>
+            <div class="event-card novelty">
+                <div class="event-image">
+                    <img src="e project/img/jumping safri.jpg" alt="Event Image">
+                </div>
+                <div class="event-content">
+                    <div class="event-date">APRIL 20, 2021 • 1:00 PM - 5:00 PM</div>
+                    <div class="event-title">Jumping Safari</div>
+                    <div class="event-location">Central Zoo, 167 Cathedral Ave, Hempstead</div>
+                    <div class="event-description">Get up close and personal with gentle giraffes as you hand-feed them.
+                    </div>
+                    <div class="event-price">$16 <a href=""><button class="event-ticket">BUY TICKET</button></a></div>
+                </div>
+            </div>
+            <div class="event-card popular">
+                <div class="event-image">
+                    <img src="e project/img/incredible-reptiles.jpg" alt="Event Image">
+                </div>
+                <div class="event-content">
+                    <div class="event-date">APRIL 28, 2021 • 2:00 PM - 6:00 PM</div>
+                    <div class="event-title">Incredible Reptiiles</div>
+                    <div class="event-location">Central Zoo, 167 Cathedral Ave, Hempstead</div>
+                    <div class="event-description">Enjoy the adorable penguins as they waddle around in their daily
+                        parade.</div>
+                    <div class="event-price">$29 <a href=""><button class="event-ticket">BUY TICKET</button></a></div>
+                </div>
+            </div>
+            <div class="event-card upcoming">
+                <div class="event-image">
+                    <img src="e project/img/jungle-tour.jpg" alt="Event Image">
+                </div>
+                <div class="event-content">
+                    <div class="event-date">MAY 23, 2021 • 12:00 PM - 7:00 PM</div>
+                    <div class="event-title">Jungle Tour</div>
+                    <div class="event-location">Central Zoo, 167 Cathedral Ave, Hempstead</div>
+                    <div class="event-description">Experience the power and majesty of lions up close in this thrilling
+                        show.</div>
+                    <div class="event-price">$12 <a href=""><button class="event-ticket">BUY TICKET</button></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="container safari align-items-center justify-content-center">
+            <h1>Welcome To The SAFARI</h1>
+            <div class="safari-p">
+                <p>With over 37,000 animals from over 500 incredible species, there’s always something to discover at
+                    Central Zoo. </p>
+                <a href="gallery.html" class="btn button-safari">See More</a>
+            </div>
+        </div>
+
+
+        <div class="grid-container container " data-aos="fade-up" data-aos-delay="300">
+            <div class="grid-item item1">
+                <img src="e project/images for animals/mammals/birger-strahl-4WzdySGib64-unsplash.jpg">
+            </div>
+            <div class="grid-item item3">
+                <img src="e project/images for animals/mammals/alvan-nee-ZCHj_2lJP00-unsplash.jpg">
+            </div>
+            <div class="grid-item item4">
+                <img src="e project/images for animals/marine animals/noaa-a7T0PQol-6E-unsplash.jpg">
+            </div>
+            <div class="grid-item item5">
+                <img src="e project/images for animals/mammals/matias-tapia-Q9gAijKx5wY-unsplash.jpg">
+            </div>
+            <div class="grid-item item6">
+                <img src="e project/images for animals/reptiles/hasmik-ghazaryan-olson-N_GrR8c2EMk-unsplash.jpg">
+            </div>
+            <div class="grid-item item7">
+                <img src="e project/images for animals/marine animals/sunita-fan-vjps1B7t8p8-unsplash.jpg">
+            </div>
+            <div class="grid-item item8">
+                <img src="e project/images for animals/marine animals/david-clode-fG1fdervp1E-unsplash.jpg">
+            </div>
+            <div class="grid-item item11">
+                <img src="e project/images for animals/marine animals/david-clode-9FvTOCfvt_w-unsplash.jpg">
+            </div>
+            <div class="grid-item item12">
+                <img src="e project/images for animals/marine animals/noaa-JI1Eg7viF5g-unsplash.jpg">
+            </div>
+        </div>
+        <div class="heading-safari-card border-bottom container">
+            CHOOSE YOUR SAFARI PLAN
+        </div>
+        <div class="container info">
+            <div class="card pink white " data-aos="fade-right" data-aos-delay="200">
+                <div class="heading-div">
+                    <h2>Basic Safari Camp <i class="fa-solid fa-arrow-right fa-bounce fa-xl"></i></h2>
+                </div>
+                <img class="mt-2" src="e project/img/sid-balachandran-_9a-3NO5KJE-unsplash.jpg"
+                    alt="Girl with an animal">
+
+                <div class="info-divs">
+                    <i class="fa-solid fa-xmark fa-shake" style="color: #fb6039;"></i>
+                    <div class="div-info">Day + Night Safari Combined </div>
+                </div>
+                <div class="info-divs">
+                    <i class="fa-solid fa-xmark fa-shake" style="color: #fb6039;"></i>
+                    <div class="div-info">VIP Open Jeep with Guide </div>
+                </div>
+                <div class="info-divs">
+                    <i class="fa-solid fa-square-check fa-beat" style="color: #63E6BE;"></i>
+                    <div class="div-info"> Accommodation in Jungle Tent </div>
+                </div>
+                <div class="info-divs">
+                    <i class="fa-solid fa-square-check fa-beat" style="color: #63E6BE;"></i>
+                    <div class="div-info"> Bonfire & BBQ Dinner </div>
+                </div>
+                <div class="info-divs">
+                    <i class="fa-solid fa-square-check fa-beat" style="color: #63E6BE;"></i>
+                    <div class="div-info"> Sunrise Animal Watching </div>
+                </div>
+                <div class="info-divs">
+                    <i class="fa-solid fa-xmark fa-shake" style="color: #fb6039;"></i>
+                    <div class="div-info">Private Photographer & Binoculars </div>
+                </div>
+                <div class="info-divs">
+                    <i class="fa-solid fa-xmark fa-shake" style="color: #fb6039;"></i>
+                    <div class="div-info"> Traditional Breakfast & Unique Gift </div>
+                </div>
+                <div class="option">
+                    <h2>💰 Price: </h2>
+                    <p> PKR 5,000 per person</p>
+                    <h2>⏳ Duration: </h2>
+                    <p> 12 Hours (Full Day)</p>
+                </div>
+                <a href="#" class="button button-pkg"> BUY NOW <i
+                        class="fa-solid fa-arrow-right fa-bounce fa-xl"></i></a>
+            </div>
+            <div class="card pink white" data-aos="fade-up" data-aos-delay="300">
+                <div class="heading-div">
+                    <h2> Premium Safari Camp <i class="fa-solid fa-arrow-right fa-bounce fa-xl"></i></h2>
+                </div>
+                <img class="mt-2" src="e project/camp-3595670_960_720.jpg" alt="Child near an aquarium">
+
+                <div class="info-divs">
+                    <i class="fa-solid fa-square-check fa-beat" style="color: #63E6BE;"></i>
+                    <div class="div-info">Day + Night Safari Combined </div>
+                </div>
+                <div class="info-divs">
+                    <i class="fa-solid fa-square-check fa-beat" style="color: #63E6BE;"></i>
+                    <div class="div-info">VIP Open Jeep with Guide </div>
+                </div>
+                <div class="info-divs">
+                    <i class="fa-solid fa-square-check fa-beat" style="color: #63E6BE;"></i>
+                    <div class="div-info"> Accommodation in Jungle Tent </div>
+                </div>
+                <div class="info-divs">
+                    <i class="fa-solid fa-square-check fa-beat" style="color: #63E6BE;"></i>
+                    <div class="div-info"> Bonfire & BBQ Dinner </div>
+                </div>
+                <div class="info-divs">
+                    <i class="fa-solid fa-xmark fa-shake" style="color: #fb6039;"></i>
+                    <div class="div-info"> Sunrise Animal Watching </div>
+                </div>
+                <div class="info-divs">
+                    <i class="fa-solid fa-xmark fa-shake" style="color: #fb6039;"></i>
+                    <div class="div-info">Private Photographer & Binoculars </div>
+                </div>
+                <div class="info-divs">
+                    <i class="fa-solid fa-xmark fa-shake" style="color: #fb6039;"></i>
+                    <div class="div-info"> Traditional Breakfast & Unique Gift </div>
+                </div>
+                <div class="option">
+                    <h2>💰 Price: </h2>
+                    <p> PKR 10,000 per person</p>
+                    <h2>⏳ Duration: </h2>
+                    <p> 24 Hours (Full Day & Night)</p>
+                </div>
+                <a href="#" class="button button-pkg">BUY NOW <i
+                        class="fa-solid fa-arrow-right fa-bounce fa-xl"></i></a>
+            </div>
+            <div class="card pink white" data-aos="fade-right" data-aos-delay="300">
+                <div class="heading-div">
+                    <h2> VVIP Safari Camp <i class="fa-solid fa-arrow-right fa-bounce fa-xl"></i></h2>
+                </div>
+                <img class="mt-2" src="e project/pexels-tirachard-kumtanom-112571-887828.jpg"
+                    alt="Child near an aquarium">
+
+                <div class="info-divs">
+                    <i class="fa-solid fa-square-check fa-beat" style="color: #63E6BE;"></i>
+                    <div class="div-info">Day + Night Safari Combined </div>
+                </div>
+                <div class="info-divs">
+                    <i class="fa-solid fa-square-check fa-beat" style="color: #63E6BE;"></i>
+                    <div class="div-info">VIP Open Jeep with Guide </div>
+                </div>
+                <div class="info-divs">
+                    <i class="fa-solid fa-square-check fa-beat" style="color: #63E6BE;"></i>
+                    <div class="div-info"> Accommodation in Jungle Tent </div>
+                </div>
+                <div class="info-divs">
+                    <i class="fa-solid fa-square-check fa-beat" style="color: #63E6BE;"></i>
+                    <div class="div-info"> Bonfire & BBQ Dinner </div>
+                </div>
+                <div class="info-divs">
+                    <i class="fa-solid fa-square-check fa-beat" style="color: #63E6BE;"></i>
+                    <div class="div-info"> Sunrise Animal Watching </div>
+                </div>
+                <div class="info-divs">
+                    <i class="fa-solid fa-square-check fa-beat" style="color: #63E6BE;"></i>
+                    <div class="div-info">Private Photographer & Binoculars </div>
+                </div>
+                <div class="info-divs">
+                    <i class="fa-solid fa-square-check fa-beat" style="color: #63E6BE;"></i>
+                    <div class="div-info"> Traditional Breakfast & Unique Gift </div>
+                </div>
+                <div class="option">
+                    <h2>💰 Price: </h2>
+                    <p> PKR 10,000 per person</p>
+                    <h2>⏳ Duration: </h2>
+                    <p> 24 Hours (Full Day & Night)</p>
+                </div>
+                <a href="#" class="button button-pkg">BUY NOW <i
+                        class="fa-solid fa-arrow-right fa-bounce fa-xl"></i></a>
+            </div>
+        </div>
+        <!-- More to Discover Section -->
+        <section class="discover-section events-sec">
+            <div class="container">
+                <h2 class="text-center">More to discover</h2>
+                <div class="row g-4">
+                    <!-- Card 1 -->
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-custom card h-100">
+                            <img src="e project/pexels-scottwebb-305827.jpg" class="card-img-top "
+                                alt="Plants and gardens">
+                            <div class="card-body">
+                                <h5 class="card-title">Plants and gardens</h5>
+                                <p class="card-text">
+                                    Explore our award-winning gardens and discover our passion
+                                    for plants that not only make the zoo look beautiful, but
+                                    also play a vital role in helping local wildlife.
+                                </p>
+                                <a href="#" class="btn">Explore the gardens</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-custom card h-100">
+                            <img src="e project/shania-pinnata-a2JEYEdWky4-unsplash.jpg" class="card-img-top"
+                                alt="Food and drink">
+                            <div class="card-body">
+                                <h5 class="card-title">Food and drink</h5>
+                                <p class="card-text">
+                                    Visiting the zoo can be hungry work! If you need something
+                                    to eat, you have plenty of choice, from quick snacks to
+                                    restaurant meals.
+                                </p>
+                                <a href="#" class="btn">Food &amp; Drink</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-md-4" data-aos="fade-right" data-aos-delay="300">
+                        <div class="card-custom card h-100">
+                            <img src="e project/istockphoto-1222592873-1024x1024.jpg" class="card-img-top"
+                                alt="Play areas">
+                            <div class="card-body">
+                                <h5 class="card-title">Play areas</h5>
+                                <p class="card-text">
+                                    Let your little ones run free in five different playgrounds –
+                                    the perfect imaginative and stimulating spaces for your children
+                                    to explore at the zoo.
+                                </p>
+                                <a href="#" class="btn">See more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- More to Discover Section -->
+        <section class="discover-section ">
+            <div class="container">
+                <h2 class="text-center">Personal Meeting & Wedding Events</h2>
+                <div class="row g-4">
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-custom card h-100">
+                            <img src="e project/shardayyy-photography-fJzmPe-a0eU-unsplash.jpg" class="card-img-top"
+                                alt="Food and drink">
+                            <div class="card-body">
+                                <h5 class="card-title">Wedding & Special Events</h5>
+                                <p class="card-text">
+                                    Celebrate your big day in a breathtaking venue with elegant décor, premium catering,
+                                    and seamless event planning. Let us turn your dream wedding into reality with our
+                                    expert services and luxurious ambiance.
+                                </p>
+                                <a href="#" class="btn"> See more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 1 -->
+                    <!-- <div class="col-md-4" data-aos="fade-right" data-aos-delay="300">
+                        <div class="card-custom card h-100">
+                            <div class="card-img-top  ">
+                                <img src="e project/shardayyy-photography-fJzmPe-a0eU-unsplash.jpg"
+                                    class="card-img-top " alt="Plants and gardens">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Wedding & Special Events</h5>
+                                <p class="card-text">
+                                    Celebrate your big day in a breathtaking venue with elegant décor, premium catering, and seamless event planning. Let us turn your dream wedding into reality with our expert services and luxurious ambiance.
+                                </p>
+                                <a href="#" class="btn">See more</a>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- Card 2 -->
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-custom card h-100">
+                            <img src="e project/benjamin-child-GWe0dlVD9e0-unsplash.jpg" class="card-img-top"
+                                alt="Food and drink">
+                            <div class="card-body">
+                                <h5 class="card-title">Corporate Events</h5>
+                                <p class="card-text">
+                                    Host successful business meetings, conferences, and corporate events in a
+                                    well-equipped, sophisticated environment. Our spaces offer modern facilities,
+                                    seamless technology, and a professional atmosphere to ensure productivity and
+                                    comfort.
+                                </p>
+                                <a href="#" class="btn"> See more</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-md-4" data-aos="fade-right" data-aos-delay="300">
+                        <div class="card-custom card h-100">
+                            <img src="e project/oleg-brovchenko-t5xk1J6zaH8-unsplash.jpg" class="card-img-top"
+                                alt="Play areas">
+                            <div class="card-body">
+                                <h5 class="card-title">Shooting Location</h5>
+                                <p class="card-text">
+                                    Capture stunning visuals in our picturesque locations, perfect for films, fashion
+                                    shoots, and commercials. With a mix of natural beauty and architectural charm, we
+                                    provide an inspiring setting for creative projects.
+
+                                </p>
+                                <a href="#" class="btn">See more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Bootstrap JS (Bundle includes Popper) -->
+        <div class="container parent-content" data-aos="fade-up" data-aos-delay="300">
+            <div class="content1">
+                <h1>THOUSANDS of Amazing ANIMALS</h1>
+                <p>Central Zoo is home to thousands of animals, from towering giraffes to the tiniest of insects. Many
+                    of them
+                    are endangered, and the conservation breeding programmes we play a key role in are vital to the
+                    survival of
+                    species. Discover the amazing animals you can see here at the zoo.</p>
+                <a class="content-btn btn " href="gallery.html">SEE MORE</a>
+            </div>
+            <div class="content1">
+                <img src="e project/img/hans-veth-ltEraYc7QrU-unsplash.jpg" height="550px" width="550px">
+            </div>
+        </div>
+        <div class="sign-up">
+            <!-- <h2>BE THE FIRST TO KNOW</h2>
+            <p>Get the latest animal news and Chester Zoo updates straight to your inbox by signing up to our newsletter.
+            </p> -->
+            <div class="sign-up-box" style="margin-top: 200px; position: relative;">
+                <div class="sign-up-img d-flex align-items-center"
+                    style="justify-content: space-around; position: absolute; z-index: -100; ">
+                    <img src="e project/img/sign-up.png" height="250px" alt="">
+                    <div class="sing-up-here">
+                        <h2>BE THE FIRST TO KNOW</h2>
+                        <p>Get the latest animal news and Central Zoo updates straight to your inbox by signing up to
+                            our
+                            newsletter.
+                        </p>
+                    </div>
+                </div>
+                <form class="sign-up-form" method="post">
+                    <div class="form-box">
+                        <div class="form-name">
+                            <input class="f-l-name" type="text" placeholder="First Name" required="">
+                            <input class="f-l-name" type="text" placeholder="Last Name" required="">
+                            <input class="f-l-email" type="email" placeholder="Email" required="">
+                        </div>
+                        <div class="sign-up-checkbox">
+                            <label class="sign-up-label">
+                                <input type="checkbox" name="" id="" required="">
+                                <span>Stay up to date with the latest zoo news, upcoming events, discounts and offers,
+                                    fundraising
+                                    appeals, surveys and research to improve the zoo, competitions, and ways to get the
+                                    most out of your
+                                    visit.</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="btn-signup">
+                        <button type="submit"><a href="#"></a>SIGN UP</a></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <!-- footer-start -->
+    <footer>
+        <div class="footer">
+            <div class="top-bottom">
+                <div class="top">
+                    <div class="footer-logo">
+                        <a href="index.html">
+                            <div class="footer-name-logo">
+                                <img src="e project/img/Tiger-Zoo-Logo-Green.png" class="footer-logo-img"
+                                    alt="Central Zoo" />
+                                <h1>Central Zoo</h1>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="footer-useful-links">
+                        <h3 style="font-size: 14px;margin: 0 0 24px;font-weight: 600;">USEFUL LINKS</h3>
+                        <a href="about us.html">About Central Zoo</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="tickets.html">Tickets</a>
+                        <a href="#">Careers</a>
+                        <a href="events.html">Events & Safari</a>
+                        <a href="contact us.html">Contact US</a>
+                    </div>
+                    <div class="footer-useful-links">
+                        <h3 style="font-size: 14px;margin: 0 0 24px;font-weight: 600;">INFORMATION</h3>
+                        <a href="#">Animal Encyclopedia</a>
+                        <a href="#">Virtual Zoo Tour</a>
+                        <a href="#">Adopt an Animal </a>
+                        <a href="#">Educational Programs </a>
+                        <a href="#">Support Our Charity</a>
+                        <a href="#">Volunteer & Internship</a>
+                    </div>
+                    <div class="footer-section3">
+                        <div class="footer-Awards">
+                            <h3 style="font-size: 14px;margin: 0 0 24px;font-weight: 600;">AWARDS</h3>
+                            <div class="footer-awards-list">
+                                <a href="#">
+                                    <img src="e project/img/Award 1.png" width="60" height="100" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="e project/img/Award 2.png" width="50" height="100" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="e project/img/Award 3.png" width="69" height="100" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer-social-links">
+                            <h3 style="font-size: 14px;margin: 0 0 18px;font-weight: 600;">SOCIAL LINKS</h3>
+                            <div class="footer-social-links-list">
+                                <a href="#"><i class="bi bi-facebook social-links"></i></a>
+                                <a href="#"><i class="bi bi-twitter social-links"></i></a>
+                                <a href="#"><i class="bi bi-google social-links"></i></a>
+                            </div>
+                            <div class="footer-social-links-list">
+                                <a href="#"><i class="bi bi-instagram social-links"></i></a>
+                                <a href="#"><i class="bi bi-linkedin social-links"></i></a>
+                                <a href="#"><i class="bi bi-github social-links"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="footer-bottom-p">
+                        <p>© Central Zoo Upton-by-Central, Central, CE2 1EU Registered Charity No. 306077</p>
+                    </div>
+                    <div class="footer-bottom-anchor">
+                        <a href="#">Cookie Policy</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms & Conditions</a>
+                        <a href="#">Modern Slavery Statement</a>
+                        <a href="#">Sustainability</a>
+                    </div>
+                </div>
+            </div>
+            <div class="responsive-top-bottom">
+                <div class="responsive-top">
+                    <div class="footer-logo">
+                        <a href="index.html">
+                            <div class="footer-name-logo">
+                                <img src="e project/img/Tiger-Zoo-Logo-Green.png" class="footer-logo-img"
+                                    alt="Central Zoo" />
+                                <h1>Central Zoo</h1>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="footer-dropdown">
+                        <div class="footer-dropdown-title">Useful Links</div>
+                        <div class="footer-dropdown-content">
+                            <ul style="list-style: none; align-self: self-start; padding: 20px 0;">
+                                <li><a href="about us.html">About Central Zoo</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+                                <li><a href="tickets.html">Become A Member</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="events.html">Events & Safari</a></li>
+                                <li><a href="contact us.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="footer-dropdown">
+                        <div class="footer-dropdown-title">Information</div>
+                        <div class="footer-dropdown-content">
+                            <ul style="list-style: none; align-self: self-start; padding: 20px 0;">
+                                <li><a href="#">Animal Encyclopedia</a></li>
+                                <li><a href="#">Virtual Zoo Tour</a></li>
+                                <li><a href="#">Adopt an Animal </a></li>
+                                <li><a href="#">Educational Programs </a></li>
+                                <li><a href="#">Support Our Charity</a></li>
+                                <li><a href="#">Volunteer & Internship</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="footer-dropdown">
+                        <div class="footer-dropdown-title">AWARDS</div>
+                        <div class="footer-dropdown-content">
+                            <img src="e project/img/Award 1.png" alt="">
+                            <img src="e project/img/Award 2.png" alt="">
+                            <img src="e project/img/Award 3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="footer-social-links">
+                        <h3 style="font-size: 14px;margin: 0 0 18px;font-weight: 600;">SOCIAL LINKS</h3>
+                        <div class="footer-social-links-list">
+                            <a href=""><i class="bi bi-facebook social-links"></i></a>
+                            <a href=""><i class="bi bi-twitter social-links"></i></a>
+                            <a href=""><i class="bi bi-google social-links"></i></a>
+                            <a href=""><i class="bi bi-instagram social-links"></i></a>
+                            <a href=""><i class="bi bi-linkedin social-links"></i></a>
+                            <a href=""><i class="bi bi-github social-links"></i></a>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="footer-bottom-anchor">
+                            <a href="#">Cookie Policy</a>
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Terms & Conditions</a>
+                            <a href="#">Modern Slavery Statement</a>
+                            <a href="#">Sustainability</a>
+                        </div>
+                        <div class="footer-bottom-p">
+                            <p>© Central Zoo Upton-by-Central, Central, CE2 1EU Registered Charity No. 306077</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>>
+    <!-- footer-end -->
+       <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+    class="bi bi-arrow-up-short"></i></a>
+    <script>
+        function filterEvents(category) {
+            let cards = document.querySelectorAll('.event-card');
+            cards.forEach(card => {
+                if (category === 'all') {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = card.classList.contains(category) ? 'block' : 'none';
+                }
+            });
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        // footer-dropdown-start
+        document.querySelectorAll('.footer-dropdown-title').forEach(title => {
+            title.addEventListener('click', () => {
+                title.parentElement.classList.toggle('active');
+            });
+        });
+        // footer-dropdown-end
+        // Mobile nav toggle
+
+        const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
+
+        function mobileNavToogle() {
+            document.querySelector('body').classList.toggle('mobile-nav-active');
+            mobileNavToggleBtn.classList.toggle('bi-list');
+            mobileNavToggleBtn.classList.toggle('bi-x');
+        }
+        if (mobileNavToggleBtn) {
+            mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
+        }
+
+        /**
+         * Hide mobile nav on same-page/hash links
+         */
+        document.querySelectorAll('#navmenu a').forEach(navmenu => {
+            navmenu.addEventListener('click', () => {
+                if (document.querySelector('.mobile-nav-active')) {
+                    mobileNavToogle();
+                }
+            });
+
+        });
+
+        /**
+         * Toggle mobile nav dropdowns
+         */
+        document.querySelectorAll('.navmenu .toggle-dropdown').forEach(navmenu => {
+            navmenu.addEventListener('click', function (e) {
+                e.preventDefault();
+                this.parentNode.classList.toggle('active');
+                this.parentNode.nextElementSibling.classList.toggle('dropdown-active');
+                e.stopImmediatePropagation();
+            });
+        });
+        // scroll on top
+        let scrollTop = document.querySelector('.scroll-top');
+
+        function toggleScrollTop() {
+            if (scrollTop) {
+                window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
+            }
+        }
+        scrollTop.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        window.addEventListener('load', toggleScrollTop);
+        document.addEventListener('scroll', toggleScrollTop);
+    </script>
+</body>
+
+</html>

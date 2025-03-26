@@ -1,0 +1,410 @@
+main {
+  height: 100%;
+}
+
+.f-img {
+  background-image:
+    linear-gradient(#07423e00,
+      #07423e),
+    url(https://images.unsplash.com/photo-1613132272170-15e05bd40713?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  /* background-attachment: fixed; */
+}
+
+/* Mobile screens par image adjust karne ke liye */
+@media (max-width: 768px) {
+  .f-img {
+    background-size: cover;
+    /* Mobile par pura image fit karne ke liye */
+    background-position: top;
+    /* Image ka important part visible rahe */
+    background-repeat: no-repeat;
+  }
+}
+
+/* Benefits Section */
+.benefits-container {
+  padding: 50px 20px;
+  height: auto;
+  margin-bottom: 50px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.benefits-container h2 {
+  font-size: 50px;
+  font-family: 'Anton', sans-serif;
+  font-weight: 600;
+  color: #fff;
+}
+
+.benefits-container p {
+  font-size: 18px;
+  font-family: serif, sans-serif;
+  font-weight: 700;
+  color: #fff;
+}
+
+.benefit-box {
+  background-color: #004940;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 20px;
+
+}
+
+.benefit-box:hover {
+  transform: translateY(-10px);
+}
+
+.benefit-icon {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.benefit-box h5 {
+  font-size: 22px;
+  font-weight: 200;
+  color: #fff;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.benefit-box p {
+  font-size: 18px;
+  color: rgb(244, 247, 234);
+  margin-top: 15px;
+  font-family: 'EB Garamond';
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .benefits-container {
+    margin-top: 400px;
+  }
+
+  .benefits-container h2 {
+    font-size: 50px;
+    font-weight: 800;
+  }
+
+  .benefits-container p {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+
+  .benefit-box {
+    padding: 15px;
+  }
+
+  .benefit-icon {
+    font-size: 40px;
+  }
+
+  .benefit-box h5 {
+    font-size: 20px;
+  }
+
+  .benefit-box p {
+    font-size: 16px;
+  }
+}
+
+
+
+
+/* Membership Container */
+.membership {
+  font-family: Arial, sans-serif;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 20px;
+}
+
+.membership h2 {
+  font-size: 35px;
+  font-weight: 500;
+  text-align: center;
+  color: black;
+  font-family: 'Anton', Courier, monospace;
+
+}
+
+.membership h1 {
+  font-size: 50px;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-family: 'Anton', Courier, monospace;
+
+}
+
+.changer {
+  width: 100%;
+  max-width: 1100px;
+  background: #f9f9e6;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+/* Tabs Section */
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #022c2c;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+}
+
+.tab {
+  flex: 1;
+  min-width: 120px;
+  text-align: center;
+  padding: 15px;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 10px 10px 0 0;
+  transition: all 0.3s ease-in-out;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tab.active {
+  background: #f9f9e6;
+  color: #000;
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.membership-section {
+  padding: 20px;
+  display: none;
+}
+
+.membership-section.active {
+  display: block;
+}
+
+/* Membership Cards */
+.membership-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+  margin-top: 20px;
+  font-size: 18px;
+  flex-wrap: wrap;
+}
+
+.membership-card span {
+  flex: 1;
+  min-width: 150px;
+  text-align: center;
+  font-family: 'EB Garamond';
+  font-weight: 600;
+}
+
+.buy-btn {
+  background: rgb(0, 255, 98);
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.buy-btn:hover {
+  background-color: transparent;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.39);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .membership {
+    margin-top: 100px;
+
+  }
+
+  .membership h1 {
+    font-size: 55px;
+    margin-bottom: 30px;
+    font-weight: 800;
+    text-align: center;
+  }
+
+  #individual {
+    font-size: 20px;
+  }
+
+  .tab {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .membership-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .buy-btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .faq-answer {
+    text-align: start;
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .membership {
+    margin-top: 100px;
+
+  }
+
+  .membership h1 {
+    font-size: 55px;
+    margin-bottom: 30px;
+    font-weight: 800;
+    text-align: center;
+  }
+
+  .membership h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .tab {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .membership-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .buy-btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .faq-answer {
+    text-align: start;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .faq-answer {
+    text-align: start;
+  }
+
+  .header-main-span {
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: auto;
+    font-weight: 600;
+  }
+}
+
+/* faq-start */
+.Faq-container {
+  height: 800px;
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+  margin-top: 150px;
+  margin-bottom: 300px;
+}
+
+.Faq-container h2 {
+  font-size: 50px;
+  font-family: 'Anton', sans-serif;
+  font-weight: 600;
+  color: #fff;
+}
+
+.faq-item {
+  background: #022c2c;
+  margin: 10px 0;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  text-align: center;
+  height: auto;
+}
+
+.faq-question {
+  padding: 25px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 15px;
+  background: #f9f9e6;
+  color: #333;
+  transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+  text-align: left;
+  font-size: 18px;
+
+}
+
+.faq-question::after {
+  content: "+";
+  font-size: 20px;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 200px;
+  padding: 0;
+  font-size: 18px;
+  font-family: 'EB Garamond', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.faq-item.active .faq-question::after {
+  content: "-";
+}
+
+/* faq end */
+@media (max-width: 500px) {
+  .faq-question {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 380px) {
+  .faq-question {
+    padding: 10px;
+  }
+}
